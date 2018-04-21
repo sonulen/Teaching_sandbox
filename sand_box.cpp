@@ -10,6 +10,7 @@
 #include <stdlib.h>
 
 int main(void) {
-	puts("Hello World!!!");
+	printf("It's a life!!!\n");
+	printf("That's all\n");
 	return EXIT_SUCCESS;
 }
