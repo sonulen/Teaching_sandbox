@@ -1,2 +1,2 @@
 # sand_box
-Learning
+Песочница для изучения C++, gnu make, markdown.
