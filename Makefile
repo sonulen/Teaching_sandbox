@@ -1,5 +1,5 @@
 # Имя цели и итогового файла
-TARGET =sand_box
+TARGET = sand_box
 
 DIRS_OBJ := .obj/
 DIRS_BIN := bin/
@@ -10,6 +10,7 @@ SOURCE := $(shell find . -name "*.cpp")
 
 # Путь к локальным директориям
 DIRS := ./
+DIRS += templates/
 
 # defines
 DEFS :=
@@ -66,7 +67,7 @@ clean:
 	@$(CPP) $(CPPFLAGS) $(DEPFLAGS) $(DIRFLAGS) $(DEFFLAGS) -c $< -o $@
 	@$(POSTCOMPILE)
 	
-all:	bin/$(TARGET).elf
+all: bin/$(TARGET).elf
 
 bin/$(TARGET).elf:	$(OBJS)
 # Linker
