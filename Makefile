@@ -23,7 +23,7 @@ OBJS = $(addprefix .obj/,$(OBJECTS))
 CPP := g++
 OPTIM := -O0
 BFLAGS += -Wall -g3 -Wextra -Werror -flto
-CPPFLAGS += $(OPTIM) $(BFLAGS) -std=c++14 -pthread
+CPPFLAGS += $(OPTIM) $(BFLAGS) -std=c++17 -pthread
 
 # Флаги линковки
 LD := g++
