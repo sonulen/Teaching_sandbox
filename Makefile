@@ -5,12 +5,13 @@ DIRS_OBJ := .obj/
 DIRS_BIN := bin/
 DIRS_DEPS := .d/
 
-# Все исходники переделать на поиск потом
+# Все исходники
 SOURCE := $(shell find . -name "*.cpp")
 
 # Путь к локальным директориям
 DIRS := ./
-DIRS += templates/
+
+include features/dirs.mk
 
 # defines
 DEFS :=
