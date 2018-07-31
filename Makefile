@@ -14,7 +14,7 @@ DIRS := ./
 include features/dirs.mk
 
 # defines
-DEFS :=
+DEFS := DEBUG_FLAG
 
 # Объекты формируем
 OBJECTS = $(SOURCE:.cpp=.o)

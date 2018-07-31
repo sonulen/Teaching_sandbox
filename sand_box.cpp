@@ -15,6 +15,13 @@
 #include "main_templates.h"
 #include "parameter_pack.h"
 
+#ifdef DEBUG_FLAG
+#define DEBUG(var) { std::cout << __FILE__ << ":" << __LINE__ << ": " \
+	<< #var << " = " << (var)  << std::endl; }
+#else
+#define DEBUG(var)
+#endif
+
 int main(void) {
 	printf("Searches time...\n");
 	auto begin = std::chrono::steady_clock::now();
