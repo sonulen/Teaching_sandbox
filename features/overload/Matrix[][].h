@@ -2,6 +2,7 @@
 #define MATRIX_H_
 
 #include <stddef.h>
+#include "stdint.h"
 
 //
 #include <iostream>
@@ -23,13 +24,6 @@ public:
 
 	friend Iterator;
 
-	Matrix(float _d[rows][columns]) {
-		for (uint32_t i = 0; i < rows; i++) {
-			for (uint32_t j = 0; j < columns; j++) {
-				this->data[i][j] = _d[i][j];
-			}
-		}
-	}
 	Matrix() {
 		for (uint32_t i = 0; i < rows; i++) {
 			for (uint32_t j = 0; j < columns; j++) {
@@ -38,11 +32,81 @@ public:
 		}
 	}
 
-	Iterator operator[](size_t i) //перегрузка []
+	/**
+	 * Конструктор через "объект" двумерного массива
+	 */
+	Matrix(float _d[rows][columns]) {
+		for (uint32_t i = 0; i < rows; i++) {
+			for (uint32_t j = 0; j < columns; j++) {
+				this->data[i][j] = _d[i][j];
+			}
+		}
+	}
+
+
+
+	/**
+	 *	Конструктор через одномерный массив
+	 *	Пример использования:
+	 *		Matrix<2,2> B ( {
+	 *		1,2,
+	 *		3,4
+	 *		} );
+	 */
+	Matrix(const float (&arr)[rows * columns]) {
+		for (uint32_t i = 0; i < rows; i++) {
+			for (uint32_t j = 0; j < columns; j++) {
+				this->data[i][j] = arr[i * columns + j];
+			}
+		}
+	}
+
+	/** Конструктор перемещения с временного объекта 2-мерного массива
+	 * 	Matrix<2,2> B({
+	 *		{1,2},
+	 *		{3,4}
+	 *	});
+	 */
+	Matrix(float (&&arr)[rows][columns]) {
+		(void) arr;
+		for (uint32_t i = 0; i < rows; i++) {
+			for (uint32_t j = 0; j < columns; j++) {
+				this->data[i][j] = arr[i][j];
+			}
+		}
+	}
+
+	//перегрузка []
+	Iterator operator[](size_t i)
     {
 		std::cout << "operator[]" << std::endl;
 		return this->data[i];
     }
+
+	// Геттер на строку
+	Matrix<1, columns> operator()(size_t row) {
+		Matrix<1, columns> temp;
+		if (row < rows) {
+			for (size_t j = 0; j < columns; j++) {
+				temp(0, j) = this->data[row][j];
+			}
+		}
+		return temp;
+	}
+
+	// Геттер на элемент
+	inline float& operator()(size_t row, size_t col) {
+		if (row >= rows || col >= columns) {
+			// TODO: еще раз обсудить
+			while (1) {
+
+			}
+			return this->data[rows][columns];
+		} else {
+			return this->data[row][col];
+		}
+	}
+
 
 	Matrix<rows, columns> operator+(Matrix<rows, columns> other) {
 		Matrix<rows, columns> result_matrix;
