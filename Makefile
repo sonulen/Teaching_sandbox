@@ -12,6 +12,7 @@ SOURCE := $(shell find . -name "*.cpp")
 DIRS := ./
 
 include features/dirs.mk
+include meyers55/dirs.mk
 
 # defines
 DEFS := DEBUG_FLAG
