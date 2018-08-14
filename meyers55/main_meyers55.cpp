@@ -12,14 +12,16 @@ void check_rules () {
 	int q2=1;
 	const int* p2;
 	int const* p3;
+	(void) p2; (void) p3;
 	p3 = &q2;
 	p2 = &q2; //на что указывает p можно менять
 	// *p2 = 5; //ошибка, число менять уже нельзя
 	// *p3 = 5; //ошибка, число менять уже нельзя
 
 	// rules 3
-	rules3 obj;
-	const int& str = obj.my_num();
-	int& str2 = obj.my_num();
-	std::cout << str << " " << str2 << std::endl;
+	const rules3 obj;
+	rules3 obj2;
+	const int& num1 = obj.my_num();
+	int& num2 = obj2.my_num();
+	(void) num1; (void) num2;
 }

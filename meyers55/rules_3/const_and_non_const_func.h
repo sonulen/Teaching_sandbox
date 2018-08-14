@@ -10,12 +10,9 @@ public:
 		return this->id;
 	}
 
-	int& my_num() const {
+	int& my_num() {
 		std::cout << "non const" << std::endl;
-		return
-				const_cast<int&> (
-						(static_cast<const rules3> (*this)).my_num()
-				);
+		return this->id;
 	}
 
 	int id = 2;
