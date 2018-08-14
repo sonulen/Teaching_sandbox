@@ -1,23 +1,24 @@
 #ifndef MEYERS55_RULES_3_CONST_AND_NON_CONST_FUNC_H_
 #define MEYERS55_RULES_3_CONST_AND_NON_CONST_FUNC_H_
 
-#include "string"
 #include "iostream"
+
 class rules3 {
 public:
-	const std::string& my_roar () {
-		return this->roar;
+	const int& my_num () const {
+		std::cout << "const" << std::endl;
+		return this->id;
 	}
 
-	std::string& my_roar() {
-		std::cout << "here" << std::endl;
+	int& my_num() const {
+		std::cout << "non const" << std::endl;
 		return
-				const_cast<std::string&> (
-						static_cast<const rules3> (*this).my_roar()
+				const_cast<int&> (
+						(static_cast<const rules3> (*this)).my_num()
 				);
 	}
 
-	const std::string roar = "woof";
+	int id = 2;
 };
 
 

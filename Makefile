@@ -11,6 +11,7 @@ SOURCE := $(shell find . -name "*.cpp")
 # Путь к локальным директориям
 DIRS := ./
 
+# Путь к подключаемым директориям
 include features/dirs.mk
 include meyers55/dirs.mk
 
