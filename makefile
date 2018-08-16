@@ -6,7 +6,7 @@ DEFS := DEBUG_FLAG
 
 .PHONY = clean all
 
-all: bin/$(TARGET).elf
+all:
 	@echo - Building $(TARGET)
 	@make all -j4 --makefile=main.mk
 	@echo - Building features
