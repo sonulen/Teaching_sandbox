@@ -1,6 +1,9 @@
 #include "const_and_non_const_func.h"
 #include "debug_var.h"
 
+void func_for_rules3 ();
+
+// Псевдомейн
 void check_rules () {
 	// Константный указатель
 	int q1=1;
@@ -19,9 +22,15 @@ void check_rules () {
 	// *p3 = 5; //ошибка, число менять уже нельзя
 
 	// rules 3
-	const rules3 obj;
-	rules3 obj2;
-	const int& num1 = obj.my_num();
-	int& num2 = obj2.my_num();
+	func_for_rules3 ();
+}
+
+void func_for_rules3 () {
+	const rules3 const_obj;
+	rules3 non_const_obj2;
+	const int& num1 = const_obj.my_num();
+	int& num2 = non_const_obj2.my_num();
+	const_obj.roar();
+	non_const_obj2.roar();
 	(void) num1; (void) num2;
 }
