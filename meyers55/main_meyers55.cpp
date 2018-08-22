@@ -2,10 +2,12 @@
 #include "const_and_non_const_func.h"
 #include "ref_to_static.h"
 #include "virtual_constructor_destructor.h"
+#include "assignment.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
 void func_for_rules7 ();
+void func_for_rules12 ();
 
 // Псевдомейн
 void check_rules () {
@@ -14,7 +16,9 @@ void check_rules () {
 	// rules 4
 	// func_for_rules4 ();
 	// rules 7
-	func_for_rules7 ();
+	// func_for_rules7 ();
+	// rules 12
+	func_for_rules12 ();
 
 }
 
@@ -48,4 +52,16 @@ void func_for_rules7 () {
 	delete obj_son;
 	(void) obj1; (void) obj2; (void) obj3;
 	(void) obj_son;
+}
+
+void func_for_rules12 () {
+	First obj1;
+	obj1.set_x(2);
+	obj1.set_y(2);
+	First obj2;
+	obj2 = obj1;
+	First obj3(obj2);
+
+	// wat?
+	// First obj4(First());
 }
