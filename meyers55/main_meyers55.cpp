@@ -64,4 +64,13 @@ void func_for_rules12 () {
 
 	// wat?
 	// First obj4(First());
+
+	Second obj_second;
+	obj_second.set_x(12);
+	Second obj2_second(obj_second);
+	obj_second.set_x(111);
+	obj2_second = obj_second;
+	obj_second.set_y(1919);
+	obj_second.swap(obj2_second);
+
 }
