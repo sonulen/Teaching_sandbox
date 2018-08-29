@@ -39,6 +39,7 @@ public:
 	}
 
 	First& swap (First& rhs) {
+		std::cout << "First swap" << std::endl;
 		using std::swap;
 		swap(this->x, rhs.x);
 		swap(this->y, rhs.y);
@@ -62,7 +63,10 @@ private:
 };
 
 // swap с двумя аргументами
-
+void swap (First& lhs, First& rhs) {
+	std::cout << "First and First swap" << std::endl;
+	lhs.swap(rhs);
+}
 
 class Second : public First {
 public:
@@ -97,5 +101,10 @@ private:
 };
 
 // Swap с двумя аргументами
+void swap (Second& lhs, Second& rhs) {
+	std::cout << "Second and Second swap" << std::endl;
+	lhs.swap(rhs);
+}
+
 
 #endif /* MEYERS55_RULES_12_ASSIGNMENT_H_ */

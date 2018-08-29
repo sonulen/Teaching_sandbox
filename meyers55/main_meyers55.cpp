@@ -72,5 +72,9 @@ void func_for_rules12 () {
 	obj2_second = obj_second;
 	obj_second.set_y(1919);
 	obj_second.swap(obj2_second);
+	obj_second.set_y(1919);
+
+	using std::swap;
+	swap(obj_second, obj2_second);
 
 }
