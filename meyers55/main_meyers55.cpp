@@ -3,11 +3,13 @@
 #include "ref_to_static.h"
 #include "virtual_constructor_destructor.h"
 #include "assignment.h"
+#include "destr_in_smart_ptr.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
 void func_for_rules7 ();
 void func_for_rules12 ();
+void func_for_rules15 ();
 
 // Псевдомейн
 void check_rules () {
@@ -18,8 +20,9 @@ void check_rules () {
 	// rules 7
 	// func_for_rules7 ();
 	// rules 12
-	func_for_rules12 ();
-
+	//func_for_rules12 ();
+	// rules 15
+	func_for_rules15();
 }
 
 void func_for_rules3 () {
@@ -77,4 +80,10 @@ void func_for_rules12 () {
 	using std::swap;
 	swap(obj_second, obj2_second);
 
+}
+
+void func_for_rules15 () {
+	Holder obj;
+	obj.obj.roar();
+	obj.obj2->roar();
 }
