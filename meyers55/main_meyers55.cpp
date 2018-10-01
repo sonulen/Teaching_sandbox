@@ -5,6 +5,7 @@
 #include "assignment.h"
 #include "destr_in_smart_ptr.h"
 #include "explicit_and_default_value.h"
+#include "specific_swap.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -12,6 +13,7 @@ void func_for_rules7 ();
 void func_for_rules12 ();
 void func_for_rules15 ();
 void func_for_rules24 ();
+void func_for_rules25 ();
 
 // Псевдомейн
 void check_rules () {
@@ -27,6 +29,8 @@ void check_rules () {
 	//func_for_rules15();
 	// rules 24
 	func_for_rules24();
+	// rules 25
+	func_for_rules25();
 }
 
 void func_for_rules3 () {
@@ -99,4 +103,13 @@ void func_for_rules24 () {
 	rational obj (x);
 	rational obj2 (x,y);
 	(void) obj; (void) obj2;
+}
+
+void func_for_rules25 () {
+	Muclass ob1, ob2;
+	ob2.x = 2;
+	using std::swap;
+	swap (ob1,ob2);
+	DEBUG (ob1.x);
+	DEBUG (ob2.x);
 }
