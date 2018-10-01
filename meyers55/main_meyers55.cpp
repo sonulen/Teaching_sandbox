@@ -4,12 +4,14 @@
 #include "virtual_constructor_destructor.h"
 #include "assignment.h"
 #include "destr_in_smart_ptr.h"
+#include "explicit_and_default_value.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
 void func_for_rules7 ();
 void func_for_rules12 ();
 void func_for_rules15 ();
+void func_for_rules24 ();
 
 // Псевдомейн
 void check_rules () {
@@ -22,7 +24,9 @@ void check_rules () {
 	// rules 12
 	//func_for_rules12 ();
 	// rules 15
-	func_for_rules15();
+	//func_for_rules15();
+	// rules 24
+	func_for_rules24();
 }
 
 void func_for_rules3 () {
@@ -86,4 +90,13 @@ void func_for_rules15 () {
 	Holder obj;
 	obj.obj.roar();
 	obj.obj2->roar();
+}
+
+void func_for_rules24 () {
+	values x = values::FOUR;
+	values y = values::THREE;
+	DEBUG (sizeof(x));
+	rational obj (x);
+	rational obj2 (x,y);
+	(void) obj; (void) obj2;
 }
