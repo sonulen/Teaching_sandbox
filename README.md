@@ -6,7 +6,7 @@
 [Эффективное использование С++. 55 советов.](https://yadi.sk/i/XnJfbd8Omop9hg)
 
 | Совет  | Что тестил  | 
-|:------------- |:---------------:|
+|:------------- |:--------------- |
 | [rules_3](meyers55/rules_3/) | Const и non-const методы. const_cast. |
 | [rules_4](meyers55/rules_4/) | Ref to static. Singleton. |
 | [rules_7](meyers55/rules_7/) | Виртуальные конструктры и деструкторы при наследовании |
