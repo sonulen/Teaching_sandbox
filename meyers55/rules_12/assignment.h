@@ -78,7 +78,7 @@ public:
 		std::cout << "Second copy constructor" << std::endl;
 	}
 
-	// swap and copy
+	// copy
 	Second& operator= (const Second& rhs) {
 		std::cout << "Second operator=" << std::endl;
 		this->First::operator =(rhs);
