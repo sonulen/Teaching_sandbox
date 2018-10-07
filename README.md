@@ -14,4 +14,4 @@
 | [rules_15](meyers55/rules_15/) | Smart pointers со своей функцией-деструктор. |
 | [rules_24](meyers55/rules_24/) | explicit и конструктор со значением по умолчанию |
 | [rules_25](meyers55/rules_25/) | Свой std::swap для не шаблонного пользовательского класса |
-| [rules_27](meyers55/rules_27/) | Базовый pure vitrual method с реализацией |
+| [rules_27](meyers55/rules_27/) | pure virtual function with default implementation |

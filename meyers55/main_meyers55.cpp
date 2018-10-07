@@ -6,6 +6,7 @@
 #include "destr_in_smart_ptr.h"
 #include "explicit_and_default_value.h"
 #include "specific_swap.h"
+#include "pure_vitrual_with_reales.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -14,6 +15,7 @@ void func_for_rules12 ();
 void func_for_rules15 ();
 void func_for_rules24 ();
 void func_for_rules25 ();
+void func_for_rules27 ();
 
 // Псевдомейн
 void check_rules () {
@@ -28,9 +30,11 @@ void check_rules () {
 	// rules 15
 	//func_for_rules15();
 	// rules 24
-	func_for_rules24();
+	//func_for_rules24();
 	// rules 25
-	func_for_rules25();
+	//func_for_rules25();
+	// rules 27
+	func_for_rules27();
 }
 
 void func_for_rules3 () {
@@ -112,4 +116,10 @@ void func_for_rules25 () {
 	swap (ob1,ob2);
 	DEBUG (ob1.x);
 	DEBUG (ob2.x);
+}
+
+void func_for_rules27 () {
+	if (mywindow* pobj = create_mywindow()) {
+		pobj->mysong();
+	}
 }
