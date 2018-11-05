@@ -18,3 +18,4 @@
 | [rules_33](meyers55/rules_33/) | Using-объявление функционала базового класса |
 | [rules_35:NVI](meyers55/rules_35/NVI.h) | Non-virtual interface idiom |
 | [rules_35:Strategy](meyers55/rules_35/strategy.h) | Паттерн Стартегия через функтор |
+| [rules_35:Strategy classic](meyers55/rules_35/strategy_classic.h) | Паттерн Стартегия через функц. объект |

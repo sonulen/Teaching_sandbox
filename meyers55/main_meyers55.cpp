@@ -10,6 +10,7 @@
 #include "using_declaration.h"
 #include "NVI.h"
 #include "strategy.h"
+#include "strategy_classic.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -162,4 +163,15 @@ void func_for_rules35 () {
 	two.what_with_health();
 	three.what_with_health();
 	four.what_with_health();
+
+	// Classic Strategy
+	HealthCalcFunc defaultHealthCalc;
+	min_Health minCalc;
+	max_Health maxCalc;
+	GameCharacter_classic obj1 (defaultHealthCalc);
+	GameCharacter_classic obj2 (minCalc);
+	GameCharacter_classic obj3 (maxCalc);
+	obj1.healthValue();
+	obj2.healthValue();
+	obj3.healthValue();
 }
