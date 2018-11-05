@@ -15,3 +15,4 @@
 | [rules_24](meyers55/rules_24/) | explicit и конструктор со значением по умолчанию |
 | [rules_25](meyers55/rules_25/) | Свой std::swap для не шаблонного пользовательского класса |
 | [rules_27](meyers55/rules_27/) | pure virtual function with default implementation |
+| [rules_33](meyers55/rules_33/) | Using-объявление функционала базового класса |

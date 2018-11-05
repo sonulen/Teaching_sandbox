@@ -7,6 +7,7 @@
 #include "explicit_and_default_value.h"
 #include "specific_swap.h"
 #include "pure_vitrual_with_reales.h"
+#include "using_declaration.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -16,6 +17,7 @@ void func_for_rules15 ();
 void func_for_rules24 ();
 void func_for_rules25 ();
 void func_for_rules27 ();
+void func_for_rules33 ();
 
 // Псевдомейн
 void check_rules () {
@@ -34,7 +36,9 @@ void check_rules () {
 	// rules 25
 	//func_for_rules25();
 	// rules 27
-	func_for_rules27();
+	//func_for_rules27();
+	// rules 27
+	func_for_rules33();
 }
 
 void func_for_rules3 () {
@@ -122,4 +126,10 @@ void func_for_rules27 () {
 	if (mywindow* pobj = create_mywindow()) {
 		pobj->mysong();
 	}
+}
+
+void func_for_rules33 () {
+	Derived object;
+	object.mf1();
+	object.mf1(2);
 }
