@@ -9,6 +9,7 @@
 #include "pure_vitrual_with_reales.h"
 #include "using_declaration.h"
 #include "NVI.h"
+#include "strategy.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -138,9 +139,27 @@ void func_for_rules33 () {
 	object.mf1(2);
 }
 
+#include <random>
+#include <iostream>
+#include <functional>
+
 void func_for_rules35 () {
+	// NVI
 	Character& def_unit = *(create_default_unit());
 	Character& fat_unit = *(create_fat_unit());
 	std::cout << def_unit.what_about_health() << std::endl;
 	std::cout << fat_unit.what_about_health() << std::endl;
+
+	// Strategy + function
+	GameCharacter one;
+	EvilBadGay two (calcHealth);
+	HealthCalculator obj_functor;
+	EvilBadGay three (obj_functor);
+	GameLevel currentLevel;
+	EvilBadGay four(std::bind(&GameLevel::health, currentLevel, std::placeholders::_1));
+
+	one.what_with_health();
+	two.what_with_health();
+	three.what_with_health();
+	four.what_with_health();
 }
