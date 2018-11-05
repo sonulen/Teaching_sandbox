@@ -8,6 +8,7 @@
 #include "specific_swap.h"
 #include "pure_vitrual_with_reales.h"
 #include "using_declaration.h"
+#include "NVI.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -18,6 +19,7 @@ void func_for_rules24 ();
 void func_for_rules25 ();
 void func_for_rules27 ();
 void func_for_rules33 ();
+void func_for_rules35 ();
 
 // Псевдомейн
 void check_rules () {
@@ -37,8 +39,10 @@ void check_rules () {
 	//func_for_rules25();
 	// rules 27
 	//func_for_rules27();
-	// rules 27
-	func_for_rules33();
+	// rules 33
+	//func_for_rules33();
+	// rules 35
+	func_for_rules35();
 }
 
 void func_for_rules3 () {
@@ -132,4 +136,11 @@ void func_for_rules33 () {
 	Derived object;
 	object.mf1();
 	object.mf1(2);
+}
+
+void func_for_rules35 () {
+	Character& def_unit = *(create_default_unit());
+	Character& fat_unit = *(create_fat_unit());
+	std::cout << def_unit.what_about_health() << std::endl;
+	std::cout << fat_unit.what_about_health() << std::endl;
 }

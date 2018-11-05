@@ -16,3 +16,4 @@
 | [rules_25](meyers55/rules_25/) | Свой std::swap для не шаблонного пользовательского класса |
 | [rules_27](meyers55/rules_27/) | pure virtual function with default implementation |
 | [rules_33](meyers55/rules_33/) | Using-объявление функционала базового класса |
+| [rules_35:NVI](meyers55/rules_35/NVI.h) | Non-virtual interface idiom |
