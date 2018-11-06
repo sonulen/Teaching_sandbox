@@ -40,9 +40,7 @@ public:
 	// и которая возвращает нечто, совместимое с int
 	typedef std::function<int (const GameCharacter&)> HealthCalcFunc;
 
-	explicit GameCharacter (HealthCalcFunc hcf = defaultHealthCalc) : healthFunc(hcf) {
-
-	}
+	explicit GameCharacter (HealthCalcFunc hcf = defaultHealthCalc) : healthFunc(hcf) {}
 
 	void what_with_health () {
 		this->healthFunc(*this);

@@ -1,27 +1,4 @@
-#include "debug_var.h"
-#include "const_and_non_const_func.h"
-#include "ref_to_static.h"
-#include "virtual_constructor_destructor.h"
-#include "assignment.h"
-#include "destr_in_smart_ptr.h"
-#include "explicit_and_default_value.h"
-#include "specific_swap.h"
-#include "pure_vitrual_with_reales.h"
-#include "using_declaration.h"
-#include "NVI.h"
-#include "strategy.h"
-#include "strategy_classic.h"
-
-void func_for_rules3 ();
-void func_for_rules4 ();
-void func_for_rules7 ();
-void func_for_rules12 ();
-void func_for_rules15 ();
-void func_for_rules24 ();
-void func_for_rules25 ();
-void func_for_rules27 ();
-void func_for_rules33 ();
-void func_for_rules35 ();
+#include "rules.h"
 
 // Псевдомейн
 void check_rules () {
@@ -44,7 +21,9 @@ void check_rules () {
 	// rules 33
 	//func_for_rules33();
 	// rules 35
-	func_for_rules35();
+	//func_for_rules35();
+	// rules 37
+	func_for_rules37();
 }
 
 void func_for_rules3 () {
@@ -140,10 +119,6 @@ void func_for_rules33 () {
 	object.mf1(2);
 }
 
-#include <random>
-#include <iostream>
-#include <functional>
-
 void func_for_rules35 () {
 	// NVI
 	Character& def_unit = *(create_default_unit());
@@ -174,4 +149,18 @@ void func_for_rules35 () {
 	obj1.healthValue();
 	obj2.healthValue();
 	obj3.healthValue();
+}
+
+void func_for_rules37 () {
+	Shape obj1;
+	Rectangle obj2;
+	Shape* p_base = nullptr;
+	p_base = &obj1;
+	obj1.u_color();
+	p_base->u_color();
+	p_base = &obj2;
+	obj2.u_color();
+	p_base->u_color();
+	Rectangle* p_rect = &obj2;
+	p_rect->u_color();
 }
