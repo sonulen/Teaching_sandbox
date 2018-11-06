@@ -1,7 +1,4 @@
-# sand_box
-Песочница для изучения C++, gnu make, markdown.
-
-## Meyers 55
+## Sand box for learning Meyers 55
 
 [Эффективное использование С++. 55 советов.](https://yadi.sk/i/XnJfbd8Omop9hg)
 
