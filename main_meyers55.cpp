@@ -2,32 +2,20 @@
 
 // Псевдомейн
 void check_rules () {
-	// rules 3
-	// func_for_rules3 ();
-	// rules 4
-	// func_for_rules4 ();
-	// rules 7
-	// func_for_rules7 ();
-	// rules 12
-	//func_for_rules12 ();
-	// rules 15
-	//func_for_rules15();
-	// rules 24
-	//func_for_rules24();
-	// rules 25
-	//func_for_rules25();
-	// rules 27
-	//func_for_rules27();
-	// rules 33
-	//func_for_rules33();
-	// rules 35
-	//func_for_rules35();
-	// rules 37
-	//func_for_rules37();
-	// rules 41
-	//func_for_rules41();
-	// rules 42
-	func_for_rules42();
+//	func_for_rules3 ();
+//	func_for_rules4 ();
+//	func_for_rules7 ();
+//	func_for_rules12 ();
+//	func_for_rules15 ();
+//	func_for_rules24 ();
+//	func_for_rules25 ();
+//	func_for_rules27 ();
+//	func_for_rules33 ();
+//	func_for_rules35 ();
+//	func_for_rules37 ();
+//	func_for_rules41 ();
+//	func_for_rules42 ();
+	func_for_rules47 ();
 }
 
 void func_for_rules3 () {
@@ -184,4 +172,13 @@ void func_for_rules42 () {
 	v.push_back("first");
 	v.push_back("second");
 	print_values(v);
+}
+
+void func_for_rules47 () {
+	deque<int>::iterator obj;
+	list<float>::iterator obj2;
+	what_type_of_access(obj);
+	what_type_of_access(obj2);
+	type_of_container(deque<int>());
+	type_of_container(list<int>());
 }

@@ -21,6 +21,7 @@
 #include "default_value.h"
 #include "nonexplicit_interface.h"
 #include "dependent_template_type_name.h"
+#include "traits.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -35,6 +36,7 @@ void func_for_rules35 ();
 void func_for_rules37 ();
 void func_for_rules41 ();
 void func_for_rules42 ();
+void func_for_rules47 ();
 
 
 
