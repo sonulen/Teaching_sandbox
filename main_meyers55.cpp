@@ -25,7 +25,9 @@ void check_rules () {
 	// rules 37
 	//func_for_rules37();
 	// rules 41
-	func_for_rules41();
+	//func_for_rules41();
+	// rules 42
+	func_for_rules42();
 }
 
 void func_for_rules3 () {
@@ -167,11 +169,19 @@ void func_for_rules37 () {
 	p_rect->u_color();
 }
 
-
 void func_for_rules41 () {
 	Widget obj;
 	doProccessing(obj);
 	// Не будет компилироваться т.к. нет необходимого интерфейса
 	//int x;
 	//doProccessing(x);
+}
+
+
+void func_for_rules42 () {
+	std::vector<std::string> v;
+	v.push_back("zero");
+	v.push_back("first");
+	v.push_back("second");
+	print_values(v);
 }

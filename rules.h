@@ -20,6 +20,7 @@
 #include "strategy_classic.h"
 #include "default_value.h"
 #include "nonexplicit_interface.h"
+#include "dependent_template_type_name.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -33,6 +34,7 @@ void func_for_rules33 ();
 void func_for_rules35 ();
 void func_for_rules37 ();
 void func_for_rules41 ();
+void func_for_rules42 ();
 
 
 
