@@ -19,6 +19,7 @@
 #include "strategy.h"
 #include "strategy_classic.h"
 #include "default_value.h"
+#include "nonexplicit_interface.h"
 
 void func_for_rules3 ();
 void func_for_rules4 ();
@@ -31,6 +32,7 @@ void func_for_rules27 ();
 void func_for_rules33 ();
 void func_for_rules35 ();
 void func_for_rules37 ();
+void func_for_rules41 ();
 
 
 
