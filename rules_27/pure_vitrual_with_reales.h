@@ -33,4 +33,10 @@ mywindow* create_mywindow () {
 	return new mywindow();
 }
 
+inline void func_for_rules27 () {
+	if (mywindow* pobj = create_mywindow()) {
+		pobj->mysong();
+	}
+}
+
 #endif /* MEYERS55_RULES_27_PURE_VITRUAL_WITH_REALES_H_ */

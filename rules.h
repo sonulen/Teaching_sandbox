@@ -1,7 +1,3 @@
-/*
- * rules.h
- */
-
 #ifndef MEYERS55_RULES_H_
 #define MEYERS55_RULES_H_
 
@@ -15,29 +11,10 @@
 #include "specific_swap.h"
 #include "pure_vitrual_with_reales.h"
 #include "using_declaration.h"
-#include "NVI.h"
-#include "strategy.h"
-#include "strategy_classic.h"
+#include "rules35_function.h"
 #include "default_value.h"
 #include "nonexplicit_interface.h"
 #include "dependent_template_type_name.h"
 #include "traits.h"
-
-void func_for_rules3 ();
-void func_for_rules4 ();
-void func_for_rules7 ();
-void func_for_rules12 ();
-void func_for_rules15 ();
-void func_for_rules24 ();
-void func_for_rules25 ();
-void func_for_rules27 ();
-void func_for_rules33 ();
-void func_for_rules35 ();
-void func_for_rules37 ();
-void func_for_rules41 ();
-void func_for_rules42 ();
-void func_for_rules47 ();
-
-
 
 #endif /* MEYERS55_RULES_H_ */

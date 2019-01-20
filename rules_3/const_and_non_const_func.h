@@ -2,6 +2,7 @@
 #define MEYERS55_RULES_3_CONST_AND_NON_CONST_FUNC_H_
 
 #include "iostream"
+#include "debug_var.h"
 
 class rules3 {
 public:
@@ -35,6 +36,19 @@ public:
 	int id = 2;
 };
 
-
+inline void func_for_rules3 () {
+	const rules3 const_obj;
+	rules3 non_const_obj2;
+	const int& num1 = const_obj.my_num();
+	int& num2 = non_const_obj2.my_num();
+	const_obj.roar();
+	non_const_obj2.roar();
+	// WHY: почему тут ломается num2?
+	DEBUG(num1);
+	DEBUG(num2);
+	num2 = 3;
+	DEBUG(num1);
+	DEBUG(num2);
+}
 
 #endif /* MEYERS55_RULES_3_CONST_AND_NON_CONST_FUNC_H_ */

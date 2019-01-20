@@ -29,5 +29,13 @@ public:
 	uint16_t v2 = 0;
 };
 
+inline void func_for_rules24 () {
+	values x = values::FOUR;
+	values y = values::THREE;
+	DEBUG (sizeof(x));
+	rational obj (x);
+	rational obj2 (x,y);
+	(void) obj; (void) obj2;
+}
 
 #endif /* MEYERS55_RULES_24_EXPLICIT_AND_DEFAULT_VALUE_CPP_ */

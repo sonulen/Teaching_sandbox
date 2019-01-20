@@ -95,4 +95,13 @@ void type_of_container (Container cont) {
 	who (cont, typename type_deduction<Container>::type_info());
 }
 
+inline void func_for_rules47 () {
+	deque<int>::iterator obj;
+	list<float>::iterator obj2;
+	what_type_of_access(obj);
+	what_type_of_access(obj2);
+	type_of_container(deque<int>());
+	type_of_container(list<int>());
+}
+
 #endif /* SB_MEYERS55_RULES_47_TRAITS_H_ */

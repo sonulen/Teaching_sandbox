@@ -42,5 +42,19 @@ public:
 	}
 };
 
+inline void func_for_rules37 () {
+	Shape obj1;
+	Rectangle obj2;
+	Shape* p_base = nullptr;
+	p_base = &obj1;
+	obj1.u_color();
+	p_base->u_color();
+	p_base = &obj2;
+	obj2.u_color();
+	p_base->u_color();
+	Rectangle* p_rect = &obj2;
+	p_rect->u_color();
+}
+
 
 #endif /* MEYERS55_RULES_37_DEFAULT_VALUE_H_ */

@@ -43,4 +43,14 @@ public:
 
 };
 
+inline void func_for_rules7 () {
+	Parent obj1;
+	Son obj2;
+	Daughter obj3;
+	Parent* obj_son = new Son();
+	delete obj_son;
+	(void) obj1; (void) obj2; (void) obj3;
+	(void) obj_son;
+}
+
 #endif /* MEYERS55_RULES_7_VIRTUAL_CONSTRUCTOR_DESTRUCTOR_H_ */

@@ -30,4 +30,12 @@ void doProccessing (T& obj) {
 	}
 }
 
+inline void func_for_rules41 () {
+	Widget obj;
+	doProccessing(obj);
+	// Не будет компилироваться т.к. нет необходимого интерфейса
+	//int x;
+	//doProccessing(x);
+}
+
 #endif /* SB_MEYERS55_RULES_41_NONEXPLICIT_INTERFACE_H_ */

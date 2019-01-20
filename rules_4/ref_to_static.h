@@ -7,6 +7,7 @@
 
 #include "iostream"
 #include "stdint.h"
+#include "debug_var.h"
 
 class Object {
 public:
@@ -33,5 +34,12 @@ private:
 };
 
 Object& getter_object ();
+
+inline void func_for_rules4 () {
+	getter_object().sing_song();
+	getter_object().sing_song();
+	getter_object().sing_song();
+	DEBUG(getter_object().how_many());
+}
 
 #endif /* MEYERS55_RULES_4_REF_TO_STATIC_H_ */

@@ -106,5 +106,30 @@ void swap (Second& lhs, Second& rhs) {
 	lhs.swap(rhs);
 }
 
+inline void func_for_rules12 () {
+	First obj1;
+	obj1.set_x(2);
+	obj1.set_y(2);
+	First obj2;
+	obj2 = obj1;
+	First obj3(obj2);
+
+	// wat?
+	// First obj4(First());
+
+	Second obj_second;
+	obj_second.set_x(12);
+	Second obj2_second(obj_second);
+	obj_second.set_x(111);
+	obj2_second = obj_second;
+	obj_second.set_y(1919);
+	obj_second.swap(obj2_second);
+	obj_second.set_y(1919);
+
+	using std::swap;
+	swap(obj_second, obj2_second);
+
+}
+
 
 #endif /* MEYERS55_RULES_12_ASSIGNMENT_H_ */

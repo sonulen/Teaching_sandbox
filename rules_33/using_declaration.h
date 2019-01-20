@@ -31,5 +31,11 @@ public:
 private:
 };
 
+inline void func_for_rules33 () {
+	Derived object;
+	object.mf1();
+	object.mf1(2);
+}
+
 
 #endif /* MEYERS55_RULES_33_USING_DECLARATION_H_ */

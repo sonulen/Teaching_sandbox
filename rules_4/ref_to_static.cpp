@@ -10,5 +10,3 @@ Object& getter_object () {
 	return singleton;
 }
 
-
-

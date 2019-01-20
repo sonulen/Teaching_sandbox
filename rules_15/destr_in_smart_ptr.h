@@ -43,5 +43,10 @@ public:
 	std::shared_ptr<ink> obj2;
 };
 
+inline void func_for_rules15 () {
+	Holder obj;
+	obj.obj.roar();
+	obj.obj2->roar();
+}
 
 #endif /* MEYERS55_RULES_15_DESTR_IN_SMART_PTR_H_ */

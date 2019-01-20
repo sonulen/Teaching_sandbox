@@ -28,6 +28,12 @@ void print_values (const Type& container) {
 	}
 }
 
-
+inline void func_for_rules42 () {
+	std::vector<std::string> v;
+	v.push_back("zero");
+	v.push_back("first");
+	v.push_back("second");
+	print_values(v);
+}
 
 #endif /* SB_MEYERS55_RULES_42_DEPENDENT_TEMPLATE_TYPE_NAME_H_ */

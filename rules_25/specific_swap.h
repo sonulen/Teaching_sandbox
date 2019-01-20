@@ -25,5 +25,13 @@ namespace std {
 	}
 }
 
+inline void func_for_rules25 () {
+	Muclass ob1, ob2;
+	ob2.x = 2;
+	using std::swap;
+	swap (ob1,ob2);
+	DEBUG (ob1.x);
+	DEBUG (ob2.x);
+}
 
 #endif /* MEYERS55_RULES_25_SPECIFIC_SWAP_H_ */
