@@ -16,5 +16,6 @@
 #include "nonexplicit_interface.h"
 #include "dependent_template_type_name.h"
 #include "traits.h"
+#include "catch_new.h"
 
 #endif /* MEYERS55_RULES_H_ */

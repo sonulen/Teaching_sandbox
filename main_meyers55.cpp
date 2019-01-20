@@ -1,5 +1,10 @@
 #include "rules.h"
 
+
+#include <stddef.h>
+#include <new>
+#include "debug_var.h"
+
 // Псевдомейн
 void check_rules () {
 //	func_for_rules3 ();
@@ -15,5 +20,6 @@ void check_rules () {
 //	func_for_rules37 ();
 //	func_for_rules41 ();
 //	func_for_rules42 ();
-	func_for_rules47 ();
+//	func_for_rules47 ();
+	func_for_rules50();
 }
