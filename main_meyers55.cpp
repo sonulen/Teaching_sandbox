@@ -21,5 +21,6 @@ void check_rules () {
 //	func_for_rules41 ();
 //	func_for_rules42 ();
 //	func_for_rules47 ();
-	func_for_rules50();
+//	func_for_rules50();
+	func_for_rules52();
 }
