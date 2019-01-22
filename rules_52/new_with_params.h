@@ -39,11 +39,11 @@
 //}
 
 inline void func_for_rules52 () {
-	int counter = 0;
-	int* x = new (counter) int;
-	int* y = new (counter) int[4];
-	(void) x;
-	(void) y;
+//	int counter = 0;
+//	int* x = new (counter) int;
+//	int* y = new (counter) int[4];
+//	(void) x;
+//	(void) y;
 }
 
 
