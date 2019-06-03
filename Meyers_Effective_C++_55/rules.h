@@ -1,7 +1,9 @@
 #ifndef MEYERS55_RULES_H_
 #define MEYERS55_RULES_H_
 
-#include "debug_var.h"
+namespace Meyers_Effective_C_55 {
+
+#include "debug_print.h"
 #include "const_and_non_const_func.h"
 #include "ref_to_static.h"
 #include "virtual_constructor_destructor.h"
@@ -18,5 +20,7 @@
 #include "traits.h"
 #include "catch_new.h"
 #include "new_with_params.h"
+
+}
 
 #endif /* MEYERS55_RULES_H_ */

@@ -7,7 +7,7 @@
 
 #include "iostream"
 #include "stdint.h"
-#include "debug_var.h"
+#include "debug_print.h"
 
 class Object {
 public:

@@ -2,7 +2,9 @@
 #define MEYERS55_RULES_3_CONST_AND_NON_CONST_FUNC_H_
 
 #include "iostream"
-#include "debug_var.h"
+#include "debug_print.h"
+
+namespace Meyers_Effective_C_55 {
 
 class rules3 {
 public:
@@ -49,6 +51,8 @@ inline void func_for_rules3 () {
 	num2 = 3;
 	DEBUG(num1);
 	DEBUG(num2);
+}
+
 }
 
 #endif /* MEYERS55_RULES_3_CONST_AND_NON_CONST_FUNC_H_ */

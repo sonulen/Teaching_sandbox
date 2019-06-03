@@ -1,9 +1,10 @@
 #include "rules.h"
 
-
 #include <stddef.h>
 #include <new>
-#include "debug_var.h"
+#include "debug_print.h"
+
+using namespace Meyers_Effective_C_55;
 
 // Псевдомейн
 void check_rules () {

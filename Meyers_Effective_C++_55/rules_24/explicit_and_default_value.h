@@ -6,7 +6,7 @@
 #define MEYERS55_RULES_24_EXPLICIT_AND_DEFAULT_VALUE_CPP_
 
 #include <stdint.h>
-#include "debug_var.h"
+#include "debug_print.h"
 
 enum values : uint16_t {
 	ONE = 6,

@@ -10,7 +10,7 @@
 
 #include <stddef.h>
 #include <new>
-#include "debug_var.h"
+#include "debug_print.h"
 
 //void* operator new (std::size_t size) throw (std::bad_alloc) {
 //	DEBUG(size);
