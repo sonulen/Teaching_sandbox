@@ -10,6 +10,8 @@
 
 #include <iostream>
 
+namespace Meyers_Effective_C_55 {
+
 class Widget {
 public:
 	Widget() {};
@@ -37,5 +39,5 @@ inline void func_for_rules41 () {
 	//int x;
 	//doProccessing(x);
 }
-
+}
 #endif /* SB_MEYERS55_RULES_41_NONEXPLICIT_INTERFACE_H_ */

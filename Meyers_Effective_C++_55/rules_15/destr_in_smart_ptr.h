@@ -11,6 +11,7 @@
 #include "iostream"
 #include <memory>
 
+namespace Meyers_Effective_C_55 {
 
 class ink {
 public:
@@ -49,4 +50,5 @@ inline void func_for_rules15 () {
 	obj.obj2->roar();
 }
 
+}
 #endif /* MEYERS55_RULES_15_DESTR_IN_SMART_PTR_H_ */

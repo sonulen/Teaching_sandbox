@@ -7,6 +7,8 @@
 
 #include "iostream"
 
+namespace Meyers_Effective_C_55 {
+
 class Parent {
 public:
 	Parent () {
@@ -52,5 +54,5 @@ inline void func_for_rules7 () {
 	(void) obj1; (void) obj2; (void) obj3;
 	(void) obj_son;
 }
-
+}
 #endif /* MEYERS55_RULES_7_VIRTUAL_CONSTRUCTOR_DESTRUCTOR_H_ */

@@ -12,6 +12,8 @@
 #include <new>
 #include "debug_print.h"
 
+namespace Meyers_Effective_C_55 {
+
 //void* operator new(std::size_t size, int& count) {
 //	count++;
 //	DEBUG(count);
@@ -45,6 +47,6 @@ inline void func_for_rules52 () {
 //	(void) x;
 //	(void) y;
 }
-
+}
 
 #endif /* SB_MEYERS55_RULES_52_NEW_WITH_PARAMS_H_ */

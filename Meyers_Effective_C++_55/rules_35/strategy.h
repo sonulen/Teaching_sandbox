@@ -6,6 +6,9 @@
 #define MEYERS55_RULES_35_STRATEGY_H_
 #include <iostream>
 #include <functional>
+
+namespace Meyers_Effective_C_55 {
+
 class GameCharacter;
 
 int defaultHealthCalc(const GameCharacter&) {
@@ -54,5 +57,5 @@ class EvilBadGay: public GameCharacter {
 public:
 	EvilBadGay (HealthCalcFunc hcf = defaultHealthCalc) : GameCharacter(hcf) {};
 };
-
+}
 #endif /* MEYERS55_RULES_35_STRATEGY_H_ */

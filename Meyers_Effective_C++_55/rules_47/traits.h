@@ -10,6 +10,7 @@
 #include <iostream>
 #include <iterator>
 
+namespace Meyers_Effective_C_55 {
 
 // Своя попытка дедуцирования типа
 struct base {};
@@ -103,5 +104,5 @@ inline void func_for_rules47 () {
 	type_of_container(deque<int>());
 	type_of_container(list<int>());
 }
-
+}
 #endif /* SB_MEYERS55_RULES_47_TRAITS_H_ */

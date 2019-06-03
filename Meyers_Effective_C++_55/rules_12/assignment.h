@@ -7,7 +7,7 @@
 
 #include "iostream"
 #include "algorithm"
-
+namespace Meyers_Effective_C_55 {
 class First {
 public:
 	explicit First (): x(0), y(1) {
@@ -130,6 +130,6 @@ inline void func_for_rules12 () {
 	swap(obj_second, obj2_second);
 
 }
-
+}
 
 #endif /* MEYERS55_RULES_12_ASSIGNMENT_H_ */

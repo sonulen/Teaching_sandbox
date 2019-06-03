@@ -7,6 +7,8 @@
 
 #include "iostream"
 
+namespace Meyers_Effective_C_55 {
+
 class interface {
 public:
 	void start_song () {
@@ -38,5 +40,5 @@ inline void func_for_rules27 () {
 		pobj->mysong();
 	}
 }
-
+}
 #endif /* MEYERS55_RULES_27_PURE_VITRUAL_WITH_REALES_H_ */

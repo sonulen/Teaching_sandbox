@@ -12,6 +12,8 @@
 #include <new>
 #include "debug_print.h"
 
+namespace Meyers_Effective_C_55 {
+
 //void* operator new (std::size_t size) throw (std::bad_alloc) {
 //	DEBUG(size);
 //	void* pMem = malloc(size);
@@ -31,7 +33,7 @@
 //
 //	return pMem;
 //}
-//
+
 //void* operator new[](std::size_t size) {
 //	DEBUG(size);
 //	if (!size) {
@@ -48,5 +50,6 @@ inline void func_for_rules50 () {
 	int* y = new int[4];
 	(void) x;
 	(void) y;
+}
 }
 #endif /* SB_MEYERS55_RULES_50_CATCH_NEW_H_ */

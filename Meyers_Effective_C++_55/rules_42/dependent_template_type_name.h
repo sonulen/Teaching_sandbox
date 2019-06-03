@@ -11,6 +11,8 @@
 #include <vector>
 #include <iostream>
 
+namespace Meyers_Effective_C_55 {
+
 template <typename Iter_type>
 void print_value (const Iter_type& iter) {
 	// Так как тип элементов контейнера за итератором зависят от типа то тоже typename
@@ -35,5 +37,5 @@ inline void func_for_rules42 () {
 	v.push_back("second");
 	print_values(v);
 }
-
+}
 #endif /* SB_MEYERS55_RULES_42_DEPENDENT_TEMPLATE_TYPE_NAME_H_ */

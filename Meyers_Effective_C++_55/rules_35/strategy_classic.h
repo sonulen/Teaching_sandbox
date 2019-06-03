@@ -6,6 +6,8 @@
 #define MEYERS55_RULES_35_STRATEGY_CLASSIC_H_
 #include <iostream>
 
+namespace Meyers_Effective_C_55 {
+
 class GameCharacter_classic; // опережающее объявление
 
 class HealthCalcFunc {
@@ -45,7 +47,7 @@ public:
 private:
 	HealthCalcFunc* pHealth;
 };
-
+}
 
 
 #endif /* MEYERS55_RULES_35_STRATEGY_CLASSIC_H_ */

@@ -5,6 +5,8 @@
 #include "strategy.h"
 #include "strategy_classic.h"
 
+namespace Meyers_Effective_C_55 {
+
 inline void func_for_rules35 () {
 	// NVI
 	Character& def_unit = *(create_default_unit());
@@ -36,6 +38,6 @@ inline void func_for_rules35 () {
 	obj2.healthValue();
 	obj3.healthValue();
 }
-
+}
 
 #endif /* SB_MEYERS55_RULES_35_RULES35_FUNCTION_H_ */

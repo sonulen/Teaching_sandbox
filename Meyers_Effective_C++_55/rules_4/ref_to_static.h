@@ -9,6 +9,9 @@
 #include "stdint.h"
 #include "debug_print.h"
 
+
+namespace Meyers_Effective_C_55 {
+
 class Object {
 public:
 	Object() {
@@ -39,7 +42,8 @@ inline void func_for_rules4 () {
 	getter_object().sing_song();
 	getter_object().sing_song();
 	getter_object().sing_song();
-	DEBUG(getter_object().how_many());
+	DEBUG_FULL_PRINT(getter_object().how_many());
+}
 }
 
 #endif /* MEYERS55_RULES_4_REF_TO_STATIC_H_ */

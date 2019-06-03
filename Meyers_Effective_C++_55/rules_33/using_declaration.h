@@ -7,6 +7,8 @@
 
 #include <iostream>
 
+namespace Meyers_Effective_C_55 {
+
 class Base {
 public:
 	virtual void mf1 () = 0;
@@ -36,6 +38,6 @@ inline void func_for_rules33 () {
 	object.mf1();
 	object.mf1(2);
 }
-
+}
 
 #endif /* MEYERS55_RULES_33_USING_DECLARATION_H_ */

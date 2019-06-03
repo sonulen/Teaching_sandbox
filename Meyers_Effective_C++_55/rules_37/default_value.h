@@ -8,6 +8,8 @@
 #include <iostream>
 #include <stdint.h>
 
+namespace Meyers_Effective_C_55 {
+
 enum class Colors : uint8_t {
 	RED = 3,
 	BLUE,
@@ -55,6 +57,6 @@ inline void func_for_rules37 () {
 	Rectangle* p_rect = &obj2;
 	p_rect->u_color();
 }
-
+}
 
 #endif /* MEYERS55_RULES_37_DEFAULT_VALUE_H_ */

@@ -5,6 +5,8 @@
 #ifndef MEYERS55_RULES_35_NVI_H_
 #define MEYERS55_RULES_35_NVI_H_
 
+namespace Meyers_Effective_C_55 {
+
 class Character {
 public:
 	int what_about_health () {
@@ -37,7 +39,7 @@ Character* create_default_unit () {
 Character* create_fat_unit () {
 	return new Double_Health_Character;
 }
-
+}
 
 
 #endif /* MEYERS55_RULES_35_NVI_H_ */

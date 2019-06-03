@@ -42,17 +42,16 @@ inline void func_for_rules3 () {
 	const rules3 const_obj;
 	rules3 non_const_obj2;
 	const int& num1 = const_obj.my_num();
+	(void) num1;
 	int& num2 = non_const_obj2.my_num();
 	const_obj.roar();
 	non_const_obj2.roar();
 	// WHY: почему тут ломается num2?
-	DEBUG(num1);
-	DEBUG(num2);
+	DEBUG_FULL_PRINT(num1);
+	DEBUG_FULL_PRINT(num2);
 	num2 = 3;
-	DEBUG(num1);
-	DEBUG(num2);
+	DEBUG_FULL_PRINT(num1);
+	DEBUG_FULL_PRINT(num2);
 }
-
 }
-
 #endif /* MEYERS55_RULES_3_CONST_AND_NON_CONST_FUNC_H_ */
