@@ -1,0 +1,6 @@
+*.o
+*.obj
+*.elf
+bin/*
+.deps/*
+.objs/*
