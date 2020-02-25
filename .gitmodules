@@ -1,3 +1,0 @@
-[submodule "builder"]
-	path = builder
-	url = git@github.com:sonulen/builder.git
