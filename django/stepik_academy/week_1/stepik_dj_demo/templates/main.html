@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+<h2> Моя библиотека </h2>
+
+{% for object in object_list %}
+    <div> <a href="{{ object.get_absolute_url }}"> {{ object }} </a></div>
+{% endfor %}
+
+</body>
+</html>
