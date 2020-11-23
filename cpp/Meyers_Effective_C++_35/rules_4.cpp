@@ -14,6 +14,7 @@ class Interface {
 /// Вариант 1. 
 class Object {
   public:
+  
   Object() {
       std::cout << "Object()" << std::endl;
   }
@@ -35,28 +36,20 @@ class Object {
       std::cout << "~Object()" << std::endl;
   }
 
-  void voice() const {
-      std::cout << "Hi! x = " << interface_.x << std::endl;
-  }
-
   private:
   Interface interface_;
 };
 
-template <std::size_t N>
-class Container {
-    public:
+// Для 4го варианта
+template<typename T, T... ints>
+auto create(std::integer_sequence<T, ints...> int_seq) {
+    return std::array<Object, sizeof...(ints)> { {Object(Interface(ints))...} };
+}
 
-    template<typename T, T... ints>
-    Container(std::integer_sequence<T, ints...> int_seq) : 
-    arr_{ ( std::move(Object{Interface{ints}}) , ...) } {}
-
-    Container() : Container(std::make_index_sequence<N>{}) {};
-
-    private:
-
-    std::array<Object,N> arr_;
-};
+template<std::size_t N>
+auto create() {
+    return create(std::make_index_sequence<N>{});
+}
 
 // Мэйерс пишет: "вообще говоря не существует способов передать 
 // аргументы конструктору элементов массива"
@@ -91,10 +84,10 @@ int main() {
         std::cout << "#3" << std::endl;
         std::vector<Object> arr(10, Object{Interface{2}});
     }
-    // Вариант 4. Сделать через fold expression
+    // Вариант 4. Сделать через Parameter pack. На статике и rvo оптимизации.
     {
         std::cout << "#4" << std::endl;
-        Container<10> arr;
+        auto arr = create<10>();
     }
 
     return 0;
