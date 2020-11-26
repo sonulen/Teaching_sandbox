@@ -42,13 +42,14 @@ class Object {
 
 // Для 4го варианта
 template<typename T, T... ints>
-auto create(std::integer_sequence<T, ints...> int_seq) {
-    return std::array<Object, sizeof...(ints)> { {Object(Interface(ints))...} };
+auto create(Interface&& value, std::integer_sequence<T, ints...> int_seq) {
+    // Обязательно нужно распаковать pack хоть как нибудь, для этого (void)ints
+    return std::array<Object, sizeof...(ints)> { { ( (void)ints, Object{Interface{value}} )... } };
 }
 
 template<std::size_t N>
-auto create() {
-    return create(std::make_index_sequence<N>{});
+auto create(Interface&& value) {
+    return create(std::forward<Interface&&>(value), std::make_index_sequence<N>{});
 }
 
 // Мэйерс пишет: "вообще говоря не существует способов передать 
@@ -87,7 +88,7 @@ int main() {
     // Вариант 4. Сделать через Parameter pack. На статике и rvo оптимизации.
     {
         std::cout << "#4" << std::endl;
-        auto arr = create<10>();
+        auto arr = create<10>(Interface{17});
     }
 
     return 0;
