@@ -36,5 +36,6 @@
 
 | Совет  | Что тестил  | 
 |:------------- |:--------------- |
-| [rules_4](Meyers_Effective_C++_35/rules_4.cpp) | Создание массива объектов без дефолтного ктора |
-| [rules_5](Meyers_Effective_C++_35/rules_5.cpp) | Explicit и неявные преобразования |
+| [rule_4](Meyers_Effective_C++_35/rules_4.cpp) | Создание массива объектов без дефолтного ктора |
+| [rule_5](Meyers_Effective_C++_35/rules_5.cpp) | Explicit и неявные преобразования |
+| [rule_10](Meyers_Effective_C++_35/rule_10.cpp) | Вызов std::terminate при втором исключении в процессе раскручивания стэка |
