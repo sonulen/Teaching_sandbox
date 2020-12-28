@@ -43,3 +43,4 @@
 | [rule_12](Meyers_Effective_C++_35/rule_12_thow.cpp) | Проброс исключения дальше через throw; |
 | [rule_14](Meyers_Effective_C++_35/rule_14.cpp) | Обработка неожиданных исключений (при специализации исключений, deprecated с 17) |
 | [rule_20](Meyers_Effective_C++_35/rule_20.cpp) | Продление Lifetime локального объекта функции за счет const reference |
+| [rule_24](Meyers_Effective_C++_35/rule_24.cpp) | Использование vptr |
