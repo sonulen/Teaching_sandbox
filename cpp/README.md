@@ -47,3 +47,4 @@
 | [rule_25](Meyers_Effective_C++_35/rule_25.cpp) | Возвращение ковариантных указателей через интефрейс |
 | [rule_27](Meyers_Effective_C++_35/rule_27_1.cpp) | Создание объектов **только** на куче или стеке |
 | [rule_27](Meyers_Effective_C++_35/rule_27_2.cpp) | Heap Tracker (отслеживатель объектов в куче) |
+| [rule_28](Meyers_Effective_C++_35/rule_28.cpp) | Отличие указателей и умных указателей (неявные приведения) |
