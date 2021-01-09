@@ -45,3 +45,4 @@
 | [rule_20](Meyers_Effective_C++_35/rule_20.cpp) | Продление Lifetime локального объекта функции за счет const reference |
 | [rule_24](Meyers_Effective_C++_35/rule_24.cpp) | Использование vptr |
 | [rule_25](Meyers_Effective_C++_35/rule_25.cpp) | Возвращение ковариантных указателей через интефрейс |
+| [rule_27](Meyers_Effective_C++_35/rule_27_1.cpp) | Создание объектов **только** на куче или стеке |
