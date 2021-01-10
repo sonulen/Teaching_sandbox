@@ -1,10 +1,11 @@
 # C++
 Песочница для изучения C++
 
-## Tricks (sandbox)
+## 
+| Файл  | Что тестил  | 
+|:------------- |:--------------- |
+| [empty_base_optiomization.cpp](empty_base_optiomization.cpp) | Оптимизация пустых типов |
 
-* Вывод для отладки - [Debug_print](tricks/debug_print.h)
-* SFINAE is_pointer реализация - [is_pointer](tricks/is_pointer_impl.h)
 
 ## Books
 
